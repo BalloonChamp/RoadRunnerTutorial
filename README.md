@@ -2,6 +2,12 @@
 
 This is the Startup Repo for the Tutorial Series for an FTC library called [Road Runner](https://github.com/acmerobotics/road-runner). **Note:** Road Runner is in alpha and many of its APIs are incubating.
 
+**The repo contains:**<br>
+[Road Runner](https://github.com/acmerobotics/road-runner) <br>
+[Road Runner Quickstart](https://github.com/acmerobotics/road-runner-quickstart)<br>
+[FTC Dashboard](https://github.com/acmerobotics/ftc-dashboard)<br>
+And extras!
+
 ## Installation
 
 For more detailed instructions on getting Road Runner setup in your own project, see the [Road Runner README](https://github.com/acmerobotics/road-runner#core).

@@ -16,14 +16,16 @@ import org.firstinspires.ftc.teamcode.drive.mecanum.SampleMecanumDriveREVOptimiz
 @Config
 @Autonomous(group = "drive")
 public class StraightTest extends LinearOpMode {
-    public static double DISTANCE = 60;
+    public static double END_HEADING = 0;
+    public static double TRANSLATION_X = 60;
+    public static double TRANSLATION_Y = 0;
 
     @Override
     public void runOpMode() throws InterruptedException {
         SampleMecanumDriveBase drive = new SampleMecanumDriveREVOptimized(hardwareMap);
 
         Trajectory trajectory = drive.trajectoryBuilder()
-                .lineTo(new Vector2d(60,0), new LinearInterpolator(0,Math.toRadians(180)))
+                .lineTo(new Vector2d(TRANSLATION_X,TRANSLATION_Y), new LinearInterpolator(0,Math.toRadians(END_HEADING)))
                 .build();
 
         waitForStart();
